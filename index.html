@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+         <title>Sweetoria</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+       
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        
+        <style>
+ .box {
+  width: 100%; /* Default for desktop */
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tablets (width 768px or less) */
+@media (max-width: 668px) {
+  .box {
+    width: 70%;
+  }
+}
+
+/* Mobile phones (width 480px or less) */
+@media (max-width: 300px) {
+  .box {
+    width: 75%;
+  }
+}
+
+
+         body{
+          font-family:'poppins',sans-serif;
+         }
+        .hero{
+          background:#fff0f5 ;
+          background-size: cover;
+          padding: 100px 100px;
+          text-align: center;
+         
+        }
+        .hero h1 {
+      font-size: 3rem;
+      color: #e63946;
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-align:center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
+      text-align:center;
+    }
+    .cake-img {
+       max-width: 70%; 
+      border-radius: 0px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+       
+        .section-title {
+          color: #d63384;
+          
+        } 
+        .card img {
+          height: 200px;
+          object-fit: cover;
+          
+        } 
+        .navbar-nav .nav-link:hover {
+         color: #0d6efd; 
+         font-weight:normal;
+         text-decoration:underline;
+        }
+        .event-date {
+      font-size: 0.9rem;
+      color: #666;
+      text-transform: uppercase;
+    }
+    .event-title {
+      font-weight: 600;
+      margin-top: 0.5rem;
+      margin-bottom: 0.3rem;
+    }
+    .event-desc {
+      color: #333;
+    }
+    .event-img {
+      width: 80%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .event-card {
+      margin-bottom: 30px;
+    }
+     .footer-link {
+      text-decoration: none;
+      color: #212529; 
+      transition: all 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #0d6efd; 
+      text-decoration: underline;
+    }
+       
+</style> 
+    </head>
+    <body>
+       <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold " href="#"><b>Sweetoria</b></a>
+   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span> 
+     </button> 
+  <div class="collapse navbar-collapse justify-content-end" id="navcontent">
+     <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>  
+        </ul>
+        <a href="#" class="btn btn-dark">Order Now</a>
+    </div>
+  </div>
+</nav>
+ 
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        
+        <div class="col-md-5">
+          <h1>    Sweetoria</h1>
+          <h2>Delight in Every Bite</h2>
+          <p>Custom cakes for every celebration</p>
+          <a href="#" class="btn btn-danger btn-center">Explore Menu</a>
+        </div>
+
+        
+        <div class="col-md-7 text-center">
+          <img src="sweetoria.jpg" class="cake-img" alt="Cake" >
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="container text-center  ">
+  <div class="row align-items-center">
+    <div class="col-md-5">
+      <img src="cake2.jpg" class="img-fluid rounded" alt="Baker">
+    </div>
+    <div class="col-md-5">
+      <h2>About Sweetoria</h2>
+      <p>We bake fresh, custom cakes for birthdays, weddings, and every sweet moment. Each cake is handcrafted with love and premium ingredients to bring smiles with every bite.</p>
+    </div>
+  </div>
+</section> 
+<div class="container my-5 text-center">
+    <h2 class="fw-bold">Who is Sweetoria perfect for?</h2>
+    <p class="text-muted">Serve sweetness to every special group</p>
+
+    
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/9187/9187508.png" width="40" alt="Corporate Icon">
+        <h5 class="mt-3">Corporate Events</h5>
+        <p class="text-muted">Cakes with your logo or brand style</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/4336/4336556.png" width="40" alt="Party Icon">
+        <h5 class="mt-3">Party Organizers</h5>
+        <p class="text-muted">Custom cakes for any event theme</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/8833/8833083.png" width="40" alt="Home Icon">
+        <h5 class="mt-3">Home Celebrations</h5>
+       
+        <p class="text-muted">Make family time extra sweet</p>
+      </div>
+    </div>
+  </div>
+
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-4">Our Best Sellers</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card">
+          <img src="chacolate.jfif" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Chocolate Dream</h5>
+            <p class="card-text text-muted">Rich, moist chocolate layered cake topped with ganache.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="images.jfif" class="card-img-top" alt="Strawberry Cake">
+          <div class="card-body">
+            <h5 class="card-title fw- fw-bold">Strawberry Bliss</h5>
+            <p class="card-text text-muted">Fluffy vanilla sponge with fresh strawberries and cream.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <img src="birthday.jfif" class="card-img-top" alt="Birthday Cake">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Birthday Special</h5>
+            <p class="card-text text-muted">Birthday cakes designed for your  special Birthday celebrations.</p>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-3">
+        <div class="card">
+          <img src="images (1).jfif" class="card-img-bottom" alt="Customize cake">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Customize cake</h5>
+            <p class="card-text text-muted">Custom cakes designed for your most special celebrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="py-1 mt-5" style="background-color:#fff0f5">
+  <div class="container text-center">
+    <h4 class="mb-4">Reviews</h4>
+    <div class="row">
+
+      
+      <div class="col-md-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/83.jpg" class="rounded-circle mb-2" width="60" height="60" alt="Reviewer 1">
+        <p style="font-size: 14px;">The cakes from Sweetoria are fresh, soft, and full of flavor! <br>Loved it!</p>
+        <strong>Rajesh Kumar</strong><br>
+        <small>THENI</small>
+      </div>
+
+     
+      <div class="col-md-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-2" width="60" height="60" alt="Reviewer 2">
+        <p style="font-size: 14px;">They designed a perfect custom cake for my daughter’s birthday. Thank you!</p>
+        <strong>Anita Sharma</strong><br>
+        <small>THENI</small>
+      </div>
+
+     
+      <div class="col-md-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/64.jpg" class="rounded-circle mb-2" width="60" height="60" alt="Reviewer 3">
+        <p style="font-size: 14px;">Sweetoria cakes are a must-have for any celebration. Excellent taste and look!</p>
+        <strong>Vikram Iyer</strong><br>
+        <small>THENI</small>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+<section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-5">🎉 Events</h2>
+      <div class="row justify-content-center text-start">
+
+        
+        <div class="col-md-4 event-card">
+          <img src="home.jpg"  alt="Home Celebration Cake" class="event-img">
+          <div class="event-date">Events · July 15, 2025</div>
+          <div class="event-title">Home Celebrations Special Cakes</div>
+          <div class="event-desc">Custom cakes for birthdays events</div>
+        </div>
+
+       
+        <div class="col-md-4 event-card">
+          <img src="event1.jpg" alt="Corporate Gifting" class="event-img" >
+          <div class="event-date">Events · August 01, 2025</div>
+          <div class="event-title">Corporate Cake Gifting</div>
+          <div class="event-desc">Special cake gifting packages for companies</div>
+        </div>
+
+        
+        <div class="col-md-4 event-card">
+          <img src="wedding.jpg" alt="Wedding Cake Showcase" class="event-img">
+          <div class="event-date">Events · September 05, 2025</div>
+          <div class="event-title">Wedding Cake Showcase</div>
+          <div class="event-desc">Join our elegant wedding cake events </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- <section class="container mt-5" id="order">
+  <h2 class="section-title">Place Your Order</h2>
+  <form>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="cakeType" class="form-label">Cake Type</label>
+        <input type="text" class="form-control" id="cakeType" placeholder="e.g., Chocolate, Red Velvet">
+      </div>
+      <div class="col-md-3">
+        <label for="size" class="form-label">Size</label>
+        <select class="form-select" id="size">
+          <option selected>Choose...</option>
+          <option>250g</option>
+          <option>500g</option>
+          <option>1kg</option>
+        </select>
+      </div>
+      <div class="col-md-3">
+        <label for="date" class="form-label">Delivery Date</label>
+        <input type="date" class="form-control" id="date">
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success w-100">Place Your Order</button>
+      </div>
+    </div>
+  </form>
+</section>  -->
+</section>
+
+<footer class="bg-light text-dark pt-5 pb-3">
+  <div class="container">
+    <div class="row text-start">
+      
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Sweetoria</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-link">Home</a></li>
+          <li><a href="#" class="footer-link">Features</a></li>
+          <li><a href="#" class="footer-link">About Us</a></li>
+          <li><a href="#" class="footer-link">FAQ</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Social</h5>
+        <ul class="list-unstyled">
+          <li><a href="https://facebook.com" target="_blank" class="footer-link">Facebook</a></li>
+          <li><a href="https://www.twitter.com" target="_blank" class="footer-link">Twitter</a></li>
+          <li><a href="https://www.instagram.com" target="_blank" class="footer-link">Instagram</a></li>
+          <li><a href="https://www.youtube.com" target="_blank" class="footer-link">Youtube</a></li>
+        </ul>
+      </div>
+
+     
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Contact</h5>
+        <address class="text-dark">
+          795 Folsom street,<br>
+          Theni, 625531<br>
+          P: +91 8012345678<br>
+          E: sweetoria@gmail.com
+        </address>
+      </div>
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Support</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-decoration-none text-dark">Help & Support</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="mt-4">
+    <div class="text-center">
+      <p class="mb-0">© 2025 Sweetoria. All rights reserved.</p>
+    </div> 
+  </div>
+</footer>
+    </body>
+</html>
