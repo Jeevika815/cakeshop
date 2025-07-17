@@ -8,25 +8,6 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         
         <style>
- .box {
-  width: 100%; /* Default for desktop */
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* Tablets (width 768px or less) */
-@media (max-width: 668px) {
-  .box {
-    width: 70%;
-  }
-}
-
-/* Mobile phones (width 480px or less) */
-@media (max-width: 300px) {
-  .box {
-    width: 75%;
-  }
-}
 
 
          body{
@@ -35,7 +16,7 @@
         .hero{
           background:#fff0f5 ;
           background-size: cover;
-          padding: 100px 100px;
+          padding: 50px 50px;
           text-align: center;
          
         }
@@ -99,7 +80,7 @@
       border-radius: 10px;
     }
     .event-card {
-      margin-bottom: 10px;
+      margin-bottom: 30px;
     }
      .footer-link {
       text-decoration: none;
@@ -145,19 +126,19 @@
         </div>
 
         
-        <div class="col-md-7 text-center">
-          <img src="sweetoria.jpg" class="cake-img" alt="Cake" >
+        <div class="col-md-6 mt-4 text-center">
+          <img src="sweetoria.jpg" class="cake-img img-fluid" alt="Cake" >
         </div>
       </div>
     </div>
   </section>
   
-  <section class="container text-center  ">
+  <section class="container text-center py-5 ">
   <div class="row align-items-center">
-    <div class="col-md-5">
+    <div class="col-md-5 mb-4">
       <img src="cake2.jpg" class="img-fluid rounded" alt="Baker">
     </div>
-    <div class="col-md-5">
+    <div class="col-md-6">
       <h2>About Sweetoria</h2>
       <p>We bake fresh, custom cakes for birthdays, weddings, and every sweet moment. Each cake is handcrafted with love and premium ingredients to bring smiles with every bite.</p>
     </div>
@@ -192,7 +173,7 @@
 <section class="py-5">
   <div class="container text-center">
     <h2 class="section-title mb-4">Our Best Sellers</h2>
-    <div class="row g-4">
+    <div class="row g-4 justify-content-center">
       <div class="col-md-3">
         <div class="card">
           <img src="chacolate.jfif" class="card-img-top" alt="Chocolate Cake">
@@ -268,38 +249,33 @@
 <section class="py-5">
     <div class="container text-center">
       <h2 class="mb-5">🎉 Events</h2>
-      <div class="row g-4 justify-content-center ">
 
         
-      
-        <div class=" col-md-6 event-card">
-          <img src="home.jpg"  alt="Home Celebration Cake" class="event-img  img-fluid">
+      <div class="row g-4 justify-content-center ">
+        <div class="col-md-4 event-card">
+          <img src="home.jpg"  alt="Home Celebration Cake" class="event-img">
           <div class="event-date">Events · July 15, 2025</div>
           <div class="event-title">Home Celebrations Special Cakes</div>
           <div class="event-desc">Custom cakes for birthdays events</div>
         </div>
-        
+
        
-       
-      
-        <div class="col-md-6   event-card">
-          <img src="event1.jpg" alt="Corporate Gifting" class="event-img img-fluid" >
+        <div class="col-md-4 event-card">
+          <img src="event1.jpg" alt="Corporate Gifting" class="event-img" >
           <div class="event-date">Events · August 01, 2025</div>
           <div class="event-title">Corporate Cake Gifting</div>
           <div class="event-desc">Special cake gifting packages for companies</div>
         </div>
-        
 
-        <div class="col-md-6 event-card">
-     <img src="wedding.jpg" alt="Wedding Cake Showcase" class="event-img  img-fluid">
+        
+        <div class="col-md-4 event-card">
+          <img src="wedding.jpg" alt="Wedding Cake Showcase" class="event-img">
           <div class="event-date">Events · September 05, 2025</div>
           <div class="event-title">Wedding Cake Showcase</div>
           <div class="event-desc">Join our elegant wedding cake events </div>
         </div>
-
+        </div>
       </div>
-
-      
     </div>
   </section>
   
@@ -334,10 +310,11 @@
 </section>
 
 <footer class="bg-light text-dark pt-5 pb-3">
-  <div class="container">
-   
-       <div class="row g-4 justify-content-center ">
+  <div class="container text-center">
+    <div class="row gy-4">
       <div class="col-12 col-sm-6 col-md-3">
+      
+      
         <h5 class="fw-bold mb-3">Sweetoria</h5>
         <ul class="list-unstyled">
           <li><a href="#" class="footer-link">Home</a></li>
@@ -348,7 +325,7 @@
       </div>
 
      
-      <div class="col-md-6">
+      <div class="col-md-3">
         <h5 class="fw-bold mb-3">Social</h5>
         <ul class="list-unstyled">
           <li><a href="https://facebook.com" target="_blank" class="footer-link">Facebook</a></li>
@@ -359,7 +336,7 @@
       </div>
 
      
-      <div class="col-md-6">
+      <div class="col-md-3">
         <h5 class="fw-bold mb-3">Contact</h5>
         <address class="text-dark">
           795 Folsom street,<br>
@@ -368,7 +345,7 @@
           E: sweetoria@gmail.com
         </address>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-3">
         <h5 class="fw-bold mb-3">Support</h5>
         <ul class="list-unstyled">
           <li><a href="#" class="text-decoration-none text-dark">Help & Support</a></li>
@@ -381,6 +358,7 @@
       <p class="mb-0">© 2025 Sweetoria. All rights reserved.</p>
     </div> 
   </div>
+
 </footer>
     </body>
 </html>
